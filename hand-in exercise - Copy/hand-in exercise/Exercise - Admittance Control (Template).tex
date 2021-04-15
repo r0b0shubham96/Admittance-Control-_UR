@@ -1,0 +1,42 @@
+\documentclass[a4paper,10pt,oneside]{article}
+\usepackage{geometry}
+\geometry{a4paper, portrait, margin=1in}
+\usepackage{amsmath,amsthm}
+ \usepackage{amssymb}
+\usepackage{dsfont}                         % Enables double stroke fonts
+\usepackage{color}
+\usepackage[draft,inline]{fixme}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tcolorbox}
+
+\begin{document}
+\title{Hand-In Exercise: Admittance Controller}
+\author{{\color{red}Name~1 (Username~1), Name~2 (Username~2), Name~3 (Username~3)}}
+\date{}
+\maketitle
+
+\section{System Modeling}
+{\color{red}Insert a sketch of the robot including kinematic parameters.}
+\subsection{Robot Dynamics including External Forces}
+{\color{red}Insert the equations of motion for the robot including external force. You should not compute the dynamical equations but only write the symbolic equation. }
+{\color{red}Also add an external force at the end-effector to the robot simulation in Simulink.}
+
+
+\section{Admittance Control}
+{\color{red}Design an admittance controller in operational space with the orientational part expressed with quaternion.}
+\subsection{Control Law}
+{\color{red}Describe the admittance controller in operational space.}
+
+\subsection{Gain Selection}
+{\color{red}Write how the gains should be selected to obtain a critically damped system.}
+
+\subsection{Implementation}
+{\color{red}The controller should be implemented in discrete time with a sample frequency of 500~Hz. Explain the implementation. You should modify the subsystems "Admittance Controller" and "Inverse Kinematics". You can choose if you want to control the robot with velocity or position commands.}
+
+\section{Simulation}
+{\color{red}Insert simulation results for the admittance controlled robot. The admittance controller should have a desired motion of your choice. In addition, no external force should be applied for the first five seconds, then a force $f=(1,2,3)$~N should be added for five seconds, then no external force for five seconds, then a torque $\mu=(1,0.5,1)$~Nm for five seconds and lastly no external force for five seconds. You should include figures that documents the simulation including applied wrench, desired motion, actual motion.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
